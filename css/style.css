@@ -47,14 +47,58 @@ body {
   color: #555;
 }
 
+/* ******************************* */
+/* GENERAL REUSAVLE COMPONENTS */
+/* ******************************* */
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+
+  /* Put transition on original "state" */
+  transition: background-color 0.3s;
+}
+
+/* ******************************* */
+/* HEADER */
+/* ******************************* */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
+
+  height: 9.6rem;
+  padding: 0 4.8rem ;
+}
+
+.logo {
+  height: 2.2rem;
+}
+
+/* ******************************* */
+/* HERO SECTION */
+/* ******************************* */
+
 .section-hero {
   background-color: #fdf2e9;
-  padding: 9.6rem 0;
+  padding: 4.8rem 0 9.6rem 0;
 }
 
 .hero {
   max-width: 130rem;
   margin: 0 auto;
+  padding: 0 3.2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 9.6rem;
@@ -74,19 +118,6 @@ body {
   font-size: 2rem;
   line-height: 1.5;
   margin-bottom: 4.8rem;
-}
-
-.btn:link,
-.btn:visited {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 2rem;
-  font-weight: 600;
-  padding: 1.6rem 3.2rem;
-  border-radius: 9px;
-
-  /* Put transition on original "state" */
-  transition: background-color 0.3s;
 }
 
 .btn--full:link,
@@ -149,8 +180,4 @@ body {
 
 .hero-img {
   width: 100%;
-}
-
-.margin-right-sm {
-  margin-right: 1.6rem !important;
 }
