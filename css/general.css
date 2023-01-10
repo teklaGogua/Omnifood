@@ -27,6 +27,7 @@ Paragraph default: 1.6
 -- Shades: #cf711f
 -- Accents: #51cf66; #94d82d; #ffd43b
 -- Greys: #333; #555; #888;
+ #6f6f6f {Lightest gay allowed on #fdf2e9}
 
 --- 05 SHADOWS
 
@@ -68,7 +69,6 @@ body {
   margin: 0 auto;
   padding: 0 3.2rem;
 }
-
 
 .btn:link,
 .btn:visited {
