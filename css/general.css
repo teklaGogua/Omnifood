@@ -23,13 +23,15 @@ Paragraph default: 1.6
 --- 02 COLORS
 
 -- Primary: #e67e22
--- Tints: #fdf2e9; #fae5d3
--- Shades: #cf711f
+-- Tints: #fdf2e9; #fae5d3; #eb984e
+-- Shades: #cf711f; #45260a
 -- Accents: #51cf66; #94d82d; #ffd43b
 -- Greys: #333; #555; #888;
  #6f6f6f {Lightest gay allowed on #fdf2e9}
 
 --- 05 SHADOWS
+
+box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 
 --- 06 BORDER-RADIUS
 
@@ -46,6 +48,11 @@ Medium: 11px
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 html {
@@ -70,6 +77,7 @@ body {
   padding: 0 3.2rem;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -79,8 +87,25 @@ body {
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
 
+  /* Only necessary fot btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+
   /* Put transition on original "state" */
   transition: all 0.3s;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
 }
 
 .link:link,
@@ -126,7 +151,7 @@ body {
 }
 
 .heading-primary,
-.headinng-secondary {
+.heading-secondary {
   font-weight: 700;
   color: #333;
   letter-spacing: -0.5px;
